@@ -44,18 +44,6 @@ export const RightConatiner = styled.div`
   flex: 1;
 `;
 
-export const Devider = styled.div`
-  height: 1px;
-  width: 100%;
-  background-color: #0e1649;
-  opacity: 0.2;
-  margin: 39px 0 40px 0;
-`;
-
-export const ImageWrapper = styled.div`
-  margin-bottom: 16px;
-`;
-
 export const Link = styled.a`
   color: #ff7748;
 `;

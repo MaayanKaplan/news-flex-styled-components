@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Button = styled.button`
   border: none;
@@ -27,10 +27,4 @@ export const Button = styled.button`
   &:active {
     background-color: #ffbb33;
   }
-
-  /* ${(props) =>
-    props.button &&
-    css`
-      display: block;
-    `} */
 `;

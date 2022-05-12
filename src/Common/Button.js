@@ -1,6 +1,7 @@
+import React from "react";
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   border: none;
   align-items: center;
   padding: 16px 32px;
@@ -28,3 +29,9 @@ export const Button = styled.button`
     background-color: #ffbb33;
   }
 `;
+
+const Button = ({ text }) => {
+  return <StyledButton>{text}</StyledButton>;
+};
+
+export default Button;

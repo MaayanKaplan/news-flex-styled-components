@@ -1,4 +1,6 @@
+import React from "react";
 import styled from "styled-components";
+import logo from "../Images/logo.png";
 
 export const NavContainer = styled.div`
   width: 100%;
@@ -33,3 +35,21 @@ export const NavLink = styled.a`
 export const ImageWrapper = styled.div`
   margin: 32px auto 64px 64px;
 `;
+
+const Header = () => {
+  return (
+    <NavContainer>
+      <ImageWrapper>
+        <img src={logo} alt="logo" />
+      </ImageWrapper>
+      <Nav>
+        <NavLink>Courses</NavLink>
+        <NavLink>Careers</NavLink>
+        <NavLink>About us</NavLink>
+        <NavLink>Contact us</NavLink>
+      </Nav>
+    </NavContainer>
+  );
+};
+
+export default Header;

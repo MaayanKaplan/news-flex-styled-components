@@ -28,10 +28,6 @@ export const StyledButton = styled.button`
   &:active {
     background-color: #ffbb33;
   }
-
-  &:last-of-type {
-    margin-bottom: 40px;
-  }
 `;
 
 const Button = ({ text }) => {

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Common/Button";
 import ImageWrapper from "../Common/ImageWrapper";
-import Devider from "../Common/Devider";
 import { Data } from "../Utils/data";
 
 export const Container = styled.div`
@@ -43,6 +42,16 @@ export const Margin = styled.div`
   margin-bottom: 16px;
 `;
 
+export const Devider = styled.div`
+  height: 1px;
+  width: 100%;
+  background-color: #0e1649;
+  opacity: 0.2;
+  margin: 40px 0;
+
+  display: ${(props) => (props.none ? "none" : "inline")};
+`;
+
 const ContentBox = () => {
   return (
     <>
@@ -56,7 +65,7 @@ const ContentBox = () => {
               <Description>{data.description}</Description>
               {data.margin && <Margin></Margin>}
               {data.buttonText && <Button text={data.buttonText} />}
-              <Devider />
+              <Devider none={data.visibility}></Devider>
             </ContentWrapper>
 
             <ContentWrapper key={key} first={data.order}>

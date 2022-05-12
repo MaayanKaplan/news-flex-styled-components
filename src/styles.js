@@ -17,6 +17,7 @@ export const Container = styled.div`
 export const MainContainer = styled.div`
   display: flex;
   margin: 0 64px;
+  flex-wrap: wrap;
 `;
 
 export const Link = styled.a`

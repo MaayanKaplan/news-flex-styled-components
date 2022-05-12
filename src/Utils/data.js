@@ -72,6 +72,7 @@ export const Data = [
     margin: true,
     buttonText: "Subscribe",
     devider: true,
+    visibility: "none",
   },
   {
     name: "Right Container",
